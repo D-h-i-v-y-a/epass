@@ -1,0 +1,81 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: black;  
+}  
+.container {  
+    padding: 150px;  
+  background-color: lightgrey;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 20%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form action="connect.php" method="POST">
+  <div class="container">  
+  <center>  <h1> T1 E-PASS APPLICATION FORM </h1> </center>  
+  <center> <h2> ID Proof Details </h2></center>
+  <br> 
+<div>
+<label> Select ID Proof </label> 
+<select name="idproof" id="idproof" required>
+<option Selected hidden value="">Select</option>
+<option value="aadharcard">Adhar Card</option>
+<option value="rationcard">Ration Card</option>
+<option value="passport">Passport</option>
+<option value="pancard">Pancard</option>
+<option value="drivinglicense">Driving License</option>
+<option value="Others">Others</option>
+</select>
+</div> 
+<br>
+
+<label> ID Proof Number </label>    
+<input type="text" name="idnumber" id="idnumber" placeholder= "ID Proof Number" size="15" required /> 
+<label> ID Proof</label>
+<br>
+<input type="file" name="idfile" id="idfile" required/>
+<br>
+<br>
+<center>
+    <button type="submit" class="registerbtn">SUBMIT</button>  
+</center>  
+</form>  
+</body>  
+</html>

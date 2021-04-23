@@ -1,0 +1,113 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif; 
+  background-color: black;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightgrey;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+  padding: 10px 0;  
+ }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 25%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form action="connect.php" method="POST">  
+  <div class="container">  
+  <center>  <h1> T1 E-PASS APPLICATION FORM </h1> </center>  
+  <center> <h2> Co-Passenger Details </h2></center>
+  <hr>  
+
+<label><b>Co-Passenger 1</b></label>
+<br><br>
+  <label> Name </label>   
+<input type="text" name="cpname" id="cpname" placeholder= "Name" size="15" required />
+
+<label> Age </label>   
+<input type="text" name="cpage" id="cpage" placeholder= "Age" size="15" required />
+
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="male" name="gender" id="male" checked > Male   
+<input type="radio" value="female" name="gender" id="female"> Female   
+<input type="radio" value="other" name="gender" id="other"> Other  
+</div> 
+
+<label> Adhar Number </label>     
+<input type="text" name="cpadharnumber" id="cpadharnumber" placeholder= "Adhar Number" size="15" required />
+<label><b>Co-Passenger 2</b></label>
+<br><br>
+<label> Name: </label>   
+<input type="text" name="cpname1" id="cpname1" placeholder="Name" size="15" required /> 
+<label> Age </label>   
+<input type="text" name="cpage1" id="cpage1" placeholder= "Age" size="15" required />
+
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="male" name="gender1" id="male1" checked > Male   
+<input type="radio" value="female" name="gender1" id="female1"> Female   
+<input type="radio" value="other" name="gender1" id="other1"> Other  
+  
+</div> 
+<label> Adhar Number </label>     
+<input type="text" name="cpadharnumber1" id="cpadharnumber1" placeholder= "Adhar Number" size="15" required />
+
+<label><b>Co-Passenger 3</b></label>
+<br><br>
+<label> Name: </label>    
+<input type="text" name="cpname2" id="cpname2" placeholder="Name" size="15"required />  
+<label> Age </label>   
+<input type="text" name="cpage2" id="cpage2" placeholder= "Age" size="15" required />
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="male" name="gender2" id="male2" checked > Male   
+<input type="radio" value="female" name="gender2" id="female2"> Female   
+<input type="radio" value="other" name="gender2" id="other2"> Other  
+</div>
+<label> Adhar Number </label>    
+<input type="text" name="cpadharnumber2" id="cpadharnumber2" placeholder= "Adhar Number" size="15" required /> 
+<button type="submit" class="registerbtn">SUBMIT</button>    
+</form>  
+</body>  
+</html>

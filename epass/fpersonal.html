@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: black;
+}
+.container {
+    padding: 50px;
+  background-color: lightgrey;
+}
+
+input[type=text], input[type=password], textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none;
+}
+ div {
+            padding: 10px 0;
+         }
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<form action="connect.php" method="post">
+  <div class="container">
+  <center>  <h1> T1 E PASS APPLICATION FORM </h1> </center>
+  <hr>
+  <center> <h2> Applicant Personal Details </h1> </center>
+  <label> Name: </label> 
+<input type="text" name="namee" placeholder= "Name" id="namee"  size="15" required /> 
+<label> Father Name: </label> 
+<input type="text" name="fathername" placeholder="Father's Name" id="fathername" size="15" required /> 
+<label> Spouse Name: </label>  
+<input type="text" name="spousename" placeholder="Spouse Name" id="spousename" size="15"/> 
+<div>
+<label> 
+Gender :
+</label><br>
+<input type="radio" value="Male" name="gender" id="gender" checked > Male 
+<input type="radio" value="Female" name="gender" id="gender"> Female 
+<input type="radio" value="Other" name="gender" id="gender"> Other
+</div>
+<div>
+<label>Age:<label>
+<input type="text" name="age" placeholder="Age" id="age" size="15" reguired/>
+</div>
+
+<div>
+<label> Phone Number: </label>
+
+<input type="text" name="phonenumber" placeholder="Phone Number" id="phonenumber" size="10"/ required>
+</div>
+<div> 
+<label>Current Address: </label>
+<textarea cols="80" rows="5" placeholder="Current Address" name="caddress" id="caddress" value="caddress" required>
+</textarea>
+</div>
+<div>
+ <label> No of Passengers:  </label>   
+<input type="text" name="noofpassengers" id="noofpassengers" placeholder= "No of Passengers" size="15" required />
+</div> <br><br> 
+  
+  <button type="submit" class="registerbtn">SUBMIT</button> 
+</form>  
+</body>  
+</html>

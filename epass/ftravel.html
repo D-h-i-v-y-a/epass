@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body
+        {
+            font-family:Calibiri,Helvetica,sans-serif;
+            background-color:lightgrey;
+        }
+        .container
+        {
+            padding:10px;
+            background-color:lightgrey;
+
+        }
+        .registerbtn {
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    text-emphasis-color: black;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+            }
+           /* .required:after
+            {
+                content:"*";
+                color: red;
+            }*/
+
+            label {
+    width:120px;
+    clear:left;
+    text-align:right;
+    padding-right:10px;
+}
+
+input, label {
+    float:left;
+}  
+.registerbtn:hover
+{
+opacity:1;
+}
+    </style>
+
+</head>
+<body>
+    
+    <form action="tconnect.php" method="POST">
+    
+    <center>
+        <h1>E-PASS APPLICATION FORM</h1>
+    </center>
+    <hr>
+    <center>
+        <h2>TRAVEL DETAILS</h2>
+    </center>
+
+    <div class="container">
+
+    <label for="Reason" >Reason for travelling:</label>
+    <!--<span class="required">*</span>-->
+    <select name="reason" id="reason" style="min-height:30px;min-width:200px;" required>
+        <option value="Marriage">Marriage</option>
+        <option value="Deathofcloserelative">Death of close relative</option>
+        <option value="Officialwork">Official Work</option>
+        <option value="Medicalemergency">Medical Emergency</option>
+      </select>
+      <br>
+      <br>
+    <label for="States">State:</label>
+    <!--<span class="required">*</span>-->
+        <select name="states" id="states" style="min-height:30px;min-width:200px;" required>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+        </select>
+<br>
+<br>
+
+<label>Date:</label>
+<input type="date" id="dateoftravel" name="dateoftravel" style="min-height:30px;min-width:200px;" required >
+<br>
+<br>
+    </div>
+
+<h3>FROM</h3>
+<label>District:</label>
+<!--<span class="required">*</span>-->
+      <select name="district1" id="district1" style="min-height:30px;min-width:200px;" required >
+          <option value="Coimbatore">Coimbatore</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Dindigul">Dindigul</option>
+      </select><br>
+      <br>
+
+
+    <label>Street Name:</label>
+    <input type="text" id="street1" name="street1" placeholder="Enter your street name" required style="min-height:30px;min-width:200px;"><br><br>
+    <br>
+    <label for="House number" class="required">House Number:</label>
+    <input type="text" id="house1" name="house1" placeholder="Enter your house number" required style="min-height:30px;min-width:200px;"><br><br>
+    <br>
+    <label for="pin" class="required">Pincode:</label>
+    <input type="text" id="pincode1" name="pincode1" placeholder="Enter your pincode" required style="min-height:30px;min-width:200px;" ><br><br>
+    
+
+
+<h3>TO</h3>
+<label for="District">District:</label>
+      <select name="district2" id="district2" style="min-height:30px;min-width:200px;" required>
+          <option value="Coimbatore">Coimbatore</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Dindigul">Dindigul</option>
+      </select>
+      <br>
+      <br>
+
+
+    <label for="Street name">Street Name:</label>
+    <input type="text" id="street2" name="street2" placeholder="Enter your street name" required style="min-height:30px;min-width:200px;">
+    <br>
+    <br>
+    <br>
+    <label for="House number" class="required">House Number:</label>
+    <input type="text" id="house2" name="house2" placeholder="Enter your house number" required style="min-height:30px;min-width:200px;" ><br>
+    <br>
+    <br>
+    <label for="pin" class="required">Pincode:</label>
+    <input type="text" id="pincode2" name="pincode2" placeholder="Enter your pincode" required style="min-height:30px;min-width:200px;" ><br>
+    <br>
+    <br>
+
+
+
+
+    <label for="Vehicle" class="required">Type of Vehicle:</label>
+    <input type="text" id="vehicletype" name="vehicletype" placeholder="Enter your vehicle type" required style="min-height:30px;min-width:200px;"><br>
+    <br>
+    <br>
+    <label for="Vehicle num" class="required">Vehicle Number:</label>
+    <input type="text" id="vehiclenumber" name="vehiclenumber" placeholder="Enter your vehicle number"required style="min-height:30px;min-width:200px;" ><br>
+    <br>
+    <br>
+</div>
+    <div style="text-align:center">
+        <button type="submit" class="registerbtn" name="go">SUBMIT</button>
+    </div>
+
+    
+    
+    
+    
+</form> 
+
+</body>
+</html>
